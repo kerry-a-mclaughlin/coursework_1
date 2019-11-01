@@ -35,6 +35,6 @@ class Dec2Hex
         
         System.out.println("Hexadecimal representation is : " + hexadecimal);
 
-        System.out.println("HI, again!" );
+        System.out.println("plz" );
     }
 }
