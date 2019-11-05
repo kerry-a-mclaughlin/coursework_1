@@ -14,6 +14,7 @@ class Dec2Hex {
                 System.exit(1);
             }
         }
+        System.out.println("Triggering build");
         covertIntegerToHex(arg1);
         return arg1;
     }
