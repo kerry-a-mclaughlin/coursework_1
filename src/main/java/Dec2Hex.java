@@ -5,7 +5,7 @@ class Dec2Hex {
     public static void main(String args[]) {
     }
 
-    public static int recieveInputAndConvertToInteger(String[] input) {
+    public static String receiveInputAndConvertToIntegerAndConvertToHex(String[] input) {
         if (input.length > 0) {
             try {
                 arg1 = Integer.parseInt(input[0]);
@@ -14,12 +14,6 @@ class Dec2Hex {
                 System.exit(1);
             }
         }
-        System.out.println(":D");
-        covertIntegerToHex(arg1);
-        return arg1;
-    }
-
-    private static void covertIntegerToHex(int arg1) {
         char[] ch = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
         int rem, num;
         num = arg1;
@@ -32,5 +26,6 @@ class Dec2Hex {
             num = num / 16;
         }
         System.out.println("Hexadecimal representation is : " + hexadecimal);
+        return hexadecimal;
     }
 }

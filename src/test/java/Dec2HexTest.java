@@ -1,12 +1,16 @@
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 public class Dec2HexTest {
 
     @Test
     public void testDec2Hex_whenNumberIsGiven_ThenConvertToHex() {
-        String[] args = {"50"};
+        String[] args = {"15"};
+        String hex = "F";
 
-        Dec2Hex.recieveInputAndConvertToInteger(args);
+        String actualHex = Dec2Hex.receiveInputAndConvertToIntegerAndConvertToHex(args);
 
+        assertEquals(actualHex, hex);
     }
 }
