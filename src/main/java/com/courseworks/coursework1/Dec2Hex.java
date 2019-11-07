@@ -5,8 +5,6 @@ import java.util.Scanner;
 
 class Dec2Hex {
 
-    private static int arg1;
-
     public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter the integer you would like to switch to hex.");
@@ -20,6 +18,7 @@ class Dec2Hex {
             System.err.println("Please enter an integer.");
             throw new InputMismatchException();
         }
+        int arg1;
         try {
             arg1 = Integer.parseInt(input);
         } catch (NumberFormatException e) {
